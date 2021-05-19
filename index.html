@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form name="contact" method="POST" data-netlify="true">
+
+        <fieldset class="form1">
+
+            <legend>Personal Data</legend>
+
+            <div >
+                <label for="firstName">First Name</label> <br>
+                <input type="text" id="firstName" name="firstName" maxlength="30">            
+            </div>
+            
+            <div>
+                <label for="lastName">Last Name</label> <br>
+                <input type="text" id="lastName" name="lastName" maxlength="30">            
+            </div>
+            
+            <div >
+                <label for="Street">Street</label> <br>
+                <input type="text" id="Street" name="street" maxlength="30">            
+            </div>
+            
+            <div class="form1">
+                <label for="zipcode">Zipcode</label> <br>
+                <input type="tel" inputmode="numeric" id="zipcode" name="zipcode" maxlength="6" pattern="[0-9]"/>            
+            </div>
+            
+            <div> 
+                <label for="city">City</label> <br>
+                <input type="text" id="city" name="city" maxlength="30">            
+            </div>
+            
+            <div>
+                <label for="phone">Phone</label> <br>
+                <input type="text" id="phone" name="phone" maxlength="30">            
+            </div>
+            
+            <div >
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" name="email">            
+            </div>
+
+            <br>
+
+            <div>
+                <label for="comments">Comments</label> <br>
+
+                <textarea name="comment" id="comment" cols="110" rows="10" placeholder="Write your comments here"></textarea>
+                
+            </div>
+
+
+        </fieldset>
+
+            <!--SECOND FORM-->
+
+        <fieldset class="form2">
+
+            <legend>Products</legend>
+
+            <div>
+                <p>Web Design</p>
+            </div>
+
+            <div>
+
+            <input type="radio" id="individual" name="design" value="design"/>    
+            <label for="individual">Individual</label>
+
+            </div>
+
+            <div>
+
+                <input type="radio" id="template" name="design" value="template" >    
+                <label for="template">Template</label>
+    
+            </div>
+
+            <div>
+                <p>Web Developmen</p>
+            </div>
+
+                <input type="checkbox" id="web-dev" name="web-dev" value="web-developer"checked/>    
+                <label for="career-web-dev">HTML & CSS</label>
+
+                <input type="checkbox" id="web-dev" name="web-dev" value="web-developer"/>    
+                <label for="career-web-dev">Javascript</label>
+
+                <input type="checkbox" id="web-dev" name="web-dev" value="web-developer"/>    
+                <label for="career-web-dev">MongoDB</label>
+            
+            <div>
+                <p>Project Start</p>
+            </div>
+
+            <input type="date" name="begin" 
+            placeholder="dd-mm-yyyy" >
+
+            <div>
+                <p>Project End</p>
+
+            </div>
+
+            <input type="date">
+
+            <div>
+                <p>Category:</p>
+            </div>
+                
+             <select name="text" id="">
+                 <option value="personal">Personal</option>
+                 <option value="professional">Professional</option>
+             </select>   
+
+                
+            
+
+        </fieldset>
+
+        
+    </form>
+
+    <button>Order our services</button>
+
+    
+</body>
+</html>
